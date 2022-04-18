@@ -1,13 +1,14 @@
 import React, { useState } from "react"
 import { useDispatch } from "react-redux"
 import { addTimer } from "../actions"
+import "./NewTimer.css"
 
 const NewTimer = () => {
   const [name, setName] = useState("")
   const dispatch = useDispatch()
 
   return (
-    <div>
+    <div className="NewTimer">
       <input
         type="text"
         placeholder="New Timer Name"
